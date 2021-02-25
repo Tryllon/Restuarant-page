@@ -40,3 +40,59 @@ function boxShadowMenu() {
 window.addEventListener('scroll', boxShadowMenu)
 
 // scroll end  ==============================================================================
+
+
+
+// ScrollReveal ==============================================================================
+
+const srRight = ScrollReveal({
+    origin: 'right',
+    distance: '200%',
+    duration: 1000,
+})
+srRight.reveal(`.about__description,.app__description`, {
+    easing: 'cubic-bezier(0,0,0,0)',
+    }
+)
+const srRightRotate = ScrollReveal({
+    origin: 'right',
+    distance: '200%',
+    duration: 1000,
+})
+
+srRightRotate.reveal(`.banner__img`, {
+    easing: 'cubic-bezier(0,0,0,0)',
+    rotate: {
+        z: 180
+    }
+})
+const srRotate = ScrollReveal({
+    distance: '0px',
+    duration: 1000,
+
+
+})
+
+srRotate.reveal(`.footer__social-link`, {
+    easing: 'cubic-bezier(0,0,0,0)',
+    rotate: {
+        z: -180
+    }
+})
+
+const srLeft = ScrollReveal({
+    origin: 'left',
+    distance: '200%',
+    duration: 1000,
+})
+srLeft.reveal(`.about__img, .banner__description,.app__img`,{
+        easing: 'cubic-bezier(0,0,0,0)'});
+
+
+const srTop = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 1000,
+})
+srTop.reveal(` .services__title ,.services__subtitle,.services__box,.special__title,.special__subtitle,.special__box,.contact__title,.contact__subtitle,.contact__text,.contact__btn`,{
+        easing: 'cubic-bezier(0,0,0,0)'});
